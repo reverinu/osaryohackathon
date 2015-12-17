@@ -4,6 +4,7 @@ using System.Collections;
 public class Item : MonoBehaviour {
     public GameManager gamemanager;
     public PlayAudio playaudio;
+    public int light_check = 0;
 
 	public void spotlight() 
     {
@@ -15,7 +16,7 @@ public class Item : MonoBehaviour {
         gamemanager.GetComponent<GameManager>().evtutorial = 0;
         gamemanager.GetComponent<GameManager>().spotlight.intensity = 4.7f;
         Destroy(gamemanager.GetComponent<GameManager>().deslight);
-        gamemanager.GetComponent<GameManager>().staminaText.GetComponent<StaminaText>().light_check = 1;
+        light_check = 1;
         gamemanager.GetComponent<GameManager>().StartCoroutine("Selif2");
     }
 

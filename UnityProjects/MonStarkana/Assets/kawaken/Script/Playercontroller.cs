@@ -4,7 +4,7 @@ using System.Collections;
 public class Playercontroller : MonoBehaviour
 {
     public GameObject player;
-    public StaminaText staminaText;
+    public TextManager textmanager;
     public float MoveSpeed = 10f;
     public int move_check = 0;
 
@@ -24,11 +24,11 @@ public class Playercontroller : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 //左押し下げで前進
-                if (staminaText.GetComponent<StaminaText>().st > 0)
+                if (textmanager.GetComponent<TextManager>().stamina > 0)
                 {
                     player.transform.position += player.transform.forward * Time.deltaTime * MoveSpeed;
                 }
-                else if (staminaText.GetComponent<StaminaText>().st == 0)
+                else if (textmanager.GetComponent<TextManager>().stamina == 0)
                 {
                     player.transform.position += player.transform.forward * Time.deltaTime * MoveSpeed * 0.1f;
                 }

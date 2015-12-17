@@ -476,6 +476,7 @@ MonoBehaviour:
   staminaText: {fileID: 0}
   gameoverText: {fileID: 0}
   selifText: {fileID: 0}
+  textmanager: {fileID: 0}
   playercontroller: {fileID: 11479662}
   item: {fileID: 11481894}
   ushi: {fileID: 0}

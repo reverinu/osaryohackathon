@@ -15,10 +15,11 @@ public class GameManager : MonoBehaviour {
     public GameObject enemyobj;
     public GameObject enemyobj2;
     public GameObject enemyobj3;
-    public LIFEText lifeText;
-    public StaminaText staminaText;
-    public GameOverText gameoverText;
-    public SelifText selifText;
+    //public LIFEText lifeText;
+    //public StaminaText staminaText;
+    //public TextManager textmanager;
+    //public TextManager textmanager;
+    public TextManager textmanager;
     public Playercontroller playercontroller;
     public Item item;
     public Collider ushi;
@@ -36,20 +37,21 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        gameoverText.GetComponent<GameOverText>().text = nothing;
-        selifText.GetComponent<SelifText>().text = nothing;
+        textmanager.GetComponent<TextManager>().system = nothing;
+        textmanager.GetComponent<TextManager>().selif = nothing;
         StartCoroutine("Selif1");
     }
     void Update()
     {
         if (Input.GetMouseButton(0))
         {
-            if (staminaText.GetComponent<StaminaText>().st > 0) {
-                if (evtutorial == 0) 
+            if (textmanager.GetComponent<TextManager>().stamina > 0)
+            {
+                    if (evtutorial == 0) 
                 {
                     playaudio.GetComponent<PlayAudio>().walking_check2 = 1;
                 }
-                staminaText.GetComponent<StaminaText>().st--;
+                textmanager.GetComponent<TextManager>().stamina--;
             }
             else
             {
@@ -61,13 +63,13 @@ public class GameManager : MonoBehaviour {
         }
         else
         {
-            if (staminaText.GetComponent<StaminaText>().st < 1500)
+            if (textmanager.GetComponent<TextManager>().stamina < 1500)
             {
-                staminaText.GetComponent<StaminaText>().st += 3;
+                textmanager.GetComponent<TextManager>().stamina += 3;
             }
-            else if (staminaText.GetComponent<StaminaText>().st >= 1501)
+            else if (textmanager.GetComponent<TextManager>().stamina >= 1501)
             {
-                staminaText.GetComponent<StaminaText>().st = 1500;
+                textmanager.GetComponent<TextManager>().stamina = 1500;
             }
         }
 
@@ -106,7 +108,7 @@ public class GameManager : MonoBehaviour {
         }
 
 
-        if (lifeText.GetComponent<LIFEText>().life <= 30)
+        if (textmanager.GetComponent<TextManager>().life <= 30)
         {
             camerafilter.GetComponent<CameraFilter>().life_check = 1;
         }
@@ -124,11 +126,11 @@ public class GameManager : MonoBehaviour {
         if (col.gameObject.tag == "Enemy")
         {
             
-            if (lifeText.GetComponent<LIFEText>().life > 0)
+            if (textmanager.GetComponent<TextManager>().life > 0)
             {
-                lifeText.GetComponent<LIFEText>().life--;
+                textmanager.GetComponent<TextManager>().life--;
             }
-            else if (lifeText.GetComponent<LIFEText>().life == 0 && evO == 1)
+            else if (textmanager.GetComponent<TextManager>().life == 0 && evO == 1)
             {
                 evO = 0;
                 StartCoroutine("SelifO");
@@ -201,7 +203,7 @@ public class GameManager : MonoBehaviour {
     void GameOver()
     {
         playercontroller.GetComponent<Playercontroller>().move_check = 0;
-        gameoverText.GetComponent<GameOverText>().text = gameover;
+        textmanager.GetComponent<TextManager>().system = gameover;
 
     }
 
@@ -212,29 +214,29 @@ public class GameManager : MonoBehaviour {
         enemy.GetComponent<Enemy>().move_check = 1;
         enemy2.GetComponent<Enemy2>().move_check = 1;
         enemy3.GetComponent<Enemy3>().move_check = 1;
-        gameoverText.GetComponent<GameOverText>().text = gameclear;
+        textmanager.GetComponent<TextManager>().system = gameclear;
     }
 
     IEnumerator Selif1()
     {
-        gameoverText.GetComponent<GameOverText>().text = "reverProject";
+        textmanager.GetComponent<TextManager>().system = "reverProject";
         yield return new WaitForSeconds(1);
-        selifText.GetComponent<SelifText>().text = "「ん？」";
+        textmanager.GetComponent<TextManager>().selif = "「ん？」";
         yield return new WaitForSeconds(2);
-        gameoverText.GetComponent<GameOverText>().text = "@reverinu";
-        selifText.GetComponent<SelifText>().text = "「なんだこれは」";
+        textmanager.GetComponent<TextManager>().system = "@reverinu";
+        textmanager.GetComponent<TextManager>().selif = "「なんだこれは」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "「身体が小さくなってるぞ！？」";
+        textmanager.GetComponent<TextManager>().selif = "「身体が小さくなってるぞ！？」";
         yield return new WaitForSeconds(2);
-        gameoverText.GetComponent<GameOverText>().text = "since 2015";
-        selifText.GetComponent<SelifText>().text = "「夢でも見てるのか……」";
+        textmanager.GetComponent<TextManager>().system = "since 2015";
+        textmanager.GetComponent<TextManager>().selif = "「夢でも見てるのか……」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "「とりあえず、暗すぎて何も見えん。そこのライトを手に取るか」";
+        textmanager.GetComponent<TextManager>().selif = "「とりあえず、暗すぎて何も見えん。そこのライトを手に取るか」";
         yield return new WaitForSeconds(2);
-        gameoverText.GetComponent<GameOverText>().text = "Start";
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().system = "Start";
+        textmanager.GetComponent<TextManager>().selif = "";
         yield return new WaitForSeconds(3);
-        gameoverText.GetComponent<GameOverText>().text = "";
+        textmanager.GetComponent<TextManager>().system = "";
         playercontroller.GetComponent<Playercontroller>().move_check = 1;
         playaudio.GetComponent<PlayAudio>().walking_check = 1;
         yield return new WaitForSeconds(0);
@@ -242,112 +244,112 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator Selif2()
     {
-        staminaText.GetComponent<StaminaText>().st = 1000;
+        textmanager.GetComponent<TextManager>().stamina = 1000;
         yield return new WaitForSeconds(1);
-        selifText.GetComponent<SelifText>().text = "「よし、これで明るくなったな……」";
+        textmanager.GetComponent<TextManager>().selif = "「よし、これで明るくなったな……」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "「それにしても小さな体にはライトの重さは堪える……」";
+        textmanager.GetComponent<TextManager>().selif = "「それにしても小さな体にはライトの重さは堪える……」";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator Selif3()
     {
         yield return new WaitForSeconds(1.9f);
         playaudio.GetComponent<PlayAudio>().BullDown();
-        selifText.GetComponent<SelifText>().text = "「うわっ！」";
+        textmanager.GetComponent<TextManager>().selif = "「うわっ！」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "上から落ちてきたようだ";
+        textmanager.GetComponent<TextManager>().selif = "上から落ちてきたようだ";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifS()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "左から不気味な音が聞こえてくる";
+        textmanager.GetComponent<TextManager>().selif = "左から不気味な音が聞こえてくる";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifS2()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "あの音が聞こえてくる……";
+        textmanager.GetComponent<TextManager>().selif = "あの音が聞こえてくる……";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifS3()
     {
         yield return new WaitForSeconds(1);
-        selifText.GetComponent<SelifText>().text = "「……？」";
+        textmanager.GetComponent<TextManager>().selif = "「……？」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "音が消えた？";
+        textmanager.GetComponent<TextManager>().selif = "音が消えた？";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "追ってきてないようだ";
+        textmanager.GetComponent<TextManager>().selif = "追ってきてないようだ";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator Selifst0()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "これ以上走ることができないようだ";
+        textmanager.GetComponent<TextManager>().selif = "これ以上走ることができないようだ";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifO()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "「ここ……までか……」";
+        textmanager.GetComponent<TextManager>().selif = "「ここ……までか……」";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator Seliftutorial()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "「俺はライトを手に取るんじゃなかったのか……？」";
+        textmanager.GetComponent<TextManager>().selif = "「俺はライトを手に取るんじゃなかったのか……？」";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifF()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "「ここまで来たが、何がどうなってるのかいまだにわからない」";
+        textmanager.GetComponent<TextManager>().selif = "「ここまで来たが、何がどうなってるのかいまだにわからない」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "「化け物に遭遇して、何度も追いかけられるし、もうコリゴリだ」";
+        textmanager.GetComponent<TextManager>().selif = "「化け物に遭遇して、何度も追いかけられるし、もうコリゴリだ」";
         yield return new WaitForSeconds(2);
-        selifText.GetComponent<SelifText>().text = "「誰か助けてくれ……」";
+        textmanager.GetComponent<TextManager>().selif = "「誰か助けてくれ……」";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifBull()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "今まで落ちてきたことがなかったのに……";
+        textmanager.GetComponent<TextManager>().selif = "今まで落ちてきたことがなかったのに……";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifMeat()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "肉からは腐乱臭がする……";
+        textmanager.GetComponent<TextManager>().selif = "肉からは腐乱臭がする……";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
     IEnumerator SelifGomibako()
     {
         yield return new WaitForSeconds(0);
-        selifText.GetComponent<SelifText>().text = "ごみ箱がある";
+        textmanager.GetComponent<TextManager>().selif = "ごみ箱がある";
         yield return new WaitForSeconds(3);
-        selifText.GetComponent<SelifText>().text = "";
+        textmanager.GetComponent<TextManager>().selif = "";
     }
 
 
