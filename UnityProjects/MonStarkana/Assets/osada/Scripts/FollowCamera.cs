@@ -16,7 +16,7 @@ public class FollowCamera : MonoBehaviour {
 	private Vector3 Position;
 
 	void Awake(){
-		transform.position = new Vector3 (target.transform.position.x + 12.0f, target.transform.position.y + 1.5f,transform.position.z);
+		transform.position = new Vector3 (target.transform.position.x + 5.0f, target.transform.position.y + 1.5f,transform.position.z);
 	}
 
 	// Use this for initialization

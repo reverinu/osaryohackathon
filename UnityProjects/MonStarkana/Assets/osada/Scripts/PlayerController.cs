@@ -9,13 +9,13 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask groundlayer;
 	public bool grounded = false;
 	public float directionX;
-	private const float MaxJumpPower = 650.0f;
-	private const float MinJumpPower = 300.0f;
+	private const float MaxJumpPower = 400.0f;
+	private const float MinJumpPower = 400.0f;
 	private float jumpPower = MinJumpPower;
 	private const float JumpChargePoint = 2800.0f;
 	private const float movePower = 3.0f;
-	private bool jumpSpaceClicked = false;
 	private  AudioSource audioSource;
+	private float jumpPointY;
 
 	void Awake()
 	{
@@ -39,42 +39,26 @@ public class PlayerController : MonoBehaviour {
 				transform.position - (transform.up * 0.05f), groundlayer);
 			
 			if (grounded) {
-				anim.SetBool ("isJump", false);
 				if (directionX != 0) {
 					anim.SetBool ("isMove", true);
 					//移動スピードを求め代入
-					if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)){
-						anim.SetFloat ("speed", 3.0f);
-						rb2d.velocity = new Vector2 (directionX * speed*1.8f, rb2d.velocity.y);
-					}else{
-						anim.SetFloat ("speed", 1.0f);
+					if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
+						anim.speed = 3.0f;
+						rb2d.velocity = new Vector2 (directionX * speed * 1.8f, rb2d.velocity.y);
+					} else {
+						anim.speed = 1.0f;
 						rb2d.velocity = new Vector2 (directionX * speed, rb2d.velocity.y);
 					}
+				} else {
+					anim.SetBool ("isMove", false);
 				}
 				if (Input.GetKeyDown ("space")) {
-					jumpSpaceClicked = false;
-					jumpPower = MinJumpPower;
-				}
-				if (Input.GetKey ("space") && !jumpSpaceClicked) {
-					jumpPower = Mathf.Clamp (jumpPower + Time.deltaTime * JumpChargePoint, MinJumpPower, MaxJumpPower);
-				}
-				//　ジャンプさせる
-				if ((Input.GetKey ("space") && jumpPower == MaxJumpPower) || Input.GetKeyUp ("space")) {
-					if (!Input.GetKeyUp ("space")) {
-						jumpSpaceClicked = true;
-					}
-					if (jumpPower > 0) {
-						anim.SetBool ("isJump", true);
-						anim.SetBool ("isMove", false);
-						audioSource.PlayOneShot (audioSource.clip);
-					}
 					rb2d.AddForce (Vector2.up * jumpPower);
-					jumpPower = 0.0f;
+					audioSource.PlayOneShot (audioSource.clip);
 				}
 			} else {
-				anim.SetBool ("isJump", true);
-				if (Input.GetKeyDown ("space")) {
-					jumpSpaceClicked = true;
+				if (rb2d.velocity.y > 0 && Input.GetKeyUp("space")) {
+					rb2d.velocity = new Vector2(rb2d.velocity.x,0);
 				}
 				if (directionX != 0) {
 					if (directionX == 1 && rb2d.velocity.x < directionX*speed) {

@@ -12,6 +12,7 @@ TagManager:
   - Ev3
   - Ev4
   - EvTutorial
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - enemy
+  - FollowBlock
   - 
   - 
   - 
