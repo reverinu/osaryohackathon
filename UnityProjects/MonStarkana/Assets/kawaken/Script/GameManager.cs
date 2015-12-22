@@ -8,17 +8,13 @@ public class GameManager : MonoBehaviour {
     public CameraFilter camerafilter;
     public PlayAudio playaudio;
     public Enemy enemy;
-    public Enemy2 enemy2;
-    public Enemy3 enemy3;
+    public Enemy enemy2;
+    public Enemy enemy3;
     public Collider enemy2c;
     public Collider enemy3c;
     public GameObject enemyobj;
     public GameObject enemyobj2;
     public GameObject enemyobj3;
-    //public LIFEText lifeText;
-    //public StaminaText staminaText;
-    //public TextManager textmanager;
-    //public TextManager textmanager;
     public TextManager textmanager;
     public Playercontroller playercontroller;
     public Item item;
@@ -84,24 +80,24 @@ public class GameManager : MonoBehaviour {
             StartCoroutine("SelifS3");
         }
 
-        if (enemy2.GetComponent<Enemy2>().distance < enemy2.GetComponent<Enemy2>().limitDistance && evS2 == 2 && evn1 == 0)
+        if (enemy2.GetComponent<Enemy>().distance < enemy2.GetComponent<Enemy>().limitDistance && evS2 == 2 && evn1 == 0)
         {
             evS2 = 0;
             StartCoroutine("SelifS2");
         }
-        else if (enemy2.GetComponent<Enemy2>().distance >= enemy2.GetComponent<Enemy2>().limitDistance && evS2 == 0 && evn1 == 0)
+        else if (enemy2.GetComponent<Enemy>().distance >= enemy2.GetComponent<Enemy>().limitDistance && evS2 == 0 && evn1 == 0)
         {
             evS2 = 2;
             enemyobj2.SetActive(false);
             StartCoroutine("SelifS3");
         }
 
-        if (enemy3.GetComponent<Enemy3>().distance < enemy3.GetComponent<Enemy3>().limitDistance && evS3 == 2 && evn4 == 0)
+        if (enemy3.GetComponent<Enemy>().distance < enemy3.GetComponent<Enemy>().limitDistance && evS3 == 2 && evn4 == 0)
         {
             evS3 = 0;
             StartCoroutine("SelifS2");
         }
-        else if (enemy3.GetComponent<Enemy3>().distance >= enemy3.GetComponent<Enemy3>().limitDistance && evS3 == 0 && evn4 == 0)
+        else if (enemy3.GetComponent<Enemy>().distance >= enemy3.GetComponent<Enemy>().limitDistance && evS3 == 0 && evn4 == 0)
         {
             evS3 = 2;
             StartCoroutine("SelifS3");
@@ -172,7 +168,7 @@ public class GameManager : MonoBehaviour {
             evS2 = 0;
             enemyobj2.SetActive(true);
             enemy2c.attachedRigidbody.useGravity = true;
-            enemy2.GetComponent<Enemy2>().move_check = 0;
+            enemy2.GetComponent<Enemy>().move_check = 0;
             StartCoroutine("SelifS");
         }
 
@@ -194,7 +190,7 @@ public class GameManager : MonoBehaviour {
             evS3 = 0;
             enemyobj3.SetActive(true);
             enemy3c.attachedRigidbody.useGravity = true;
-            enemy3.GetComponent<Enemy3>().move_check = 0;
+            enemy3.GetComponent<Enemy>().move_check = 0;
             StartCoroutine("SelifS2");
         }
     }
@@ -212,8 +208,8 @@ public class GameManager : MonoBehaviour {
         playercontroller.GetComponent<Playercontroller>().move_check = 0;
         camerafilter.GetComponent<CameraFilter>().life_check = 0;
         enemy.GetComponent<Enemy>().move_check = 1;
-        enemy2.GetComponent<Enemy2>().move_check = 1;
-        enemy3.GetComponent<Enemy3>().move_check = 1;
+        enemy2.GetComponent<Enemy>().move_check = 1;
+        enemy3.GetComponent<Enemy>().move_check = 1;
         textmanager.GetComponent<TextManager>().system = gameclear;
     }
 

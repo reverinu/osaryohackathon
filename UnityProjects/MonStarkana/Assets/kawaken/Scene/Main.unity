@@ -137,9 +137,23 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 729062347}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11433124, guid: 90ab15cefca773249a80cca48c41f01b, type: 2}
+    - {fileID: 11444692, guid: 90ab15cefca773249a80cca48c41f01b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 90ab15cefca773249a80cca48c41f01b, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &67933734 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11447204, guid: 90ab15cefca773249a80cca48c41f01b,
+    type: 2}
+  m_PrefabInternal: {fileID: 67933733}
+  m_Script: {fileID: 11500000, guid: 7bada492c6a2d1b4f86c2b9776a8bd70, type: 3}
+--- !u!114 &67933735 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11459596, guid: 90ab15cefca773249a80cca48c41f01b,
+    type: 2}
+  m_PrefabInternal: {fileID: 67933733}
+  m_Script: {fileID: 11500000, guid: 7bada492c6a2d1b4f86c2b9776a8bd70, type: 3}
 --- !u!65 &284946562 stripped
 BoxCollider:
   m_PrefabParentObject: {fileID: 6563292, guid: ef9e97fbba8498d408542bc5976553a6,
@@ -191,11 +205,11 @@ Prefab:
     - target: {fileID: 11449124, guid: 2bd642d488e34fe4ea422219898daeeb, type: 2}
       propertyPath: enemy2
       value: 
-      objectReference: {fileID: 2090525908}
+      objectReference: {fileID: 2131484412}
     - target: {fileID: 11449124, guid: 2bd642d488e34fe4ea422219898daeeb, type: 2}
       propertyPath: enemy3
       value: 
-      objectReference: {fileID: 1242886231}
+      objectReference: {fileID: 1253315444}
     - target: {fileID: 11449124, guid: 2bd642d488e34fe4ea422219898daeeb, type: 2}
       propertyPath: enemy2c
       value: 
@@ -444,12 +458,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 67933733}
   m_Script: {fileID: 11500000, guid: e2da000dd5968a54eb3e834258ac7712, type: 3}
---- !u!114 &1242886231 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11444692, guid: 90ab15cefca773249a80cca48c41f01b,
-    type: 2}
-  m_PrefabInternal: {fileID: 67933733}
-  m_Script: {fileID: 11500000, guid: 6694524a4b493244b8a6970fda21b081, type: 3}
 --- !u!65 &1242886232 stripped
 BoxCollider:
   m_PrefabParentObject: {fileID: 6532302, guid: 90ab15cefca773249a80cca48c41f01b,
@@ -459,6 +467,24 @@ BoxCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 196912, guid: 90ab15cefca773249a80cca48c41f01b, type: 2}
   m_PrefabInternal: {fileID: 67933733}
+--- !u!114 &1253315444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253315443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2da000dd5968a54eb3e834258ac7712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playaudioenemy: {fileID: 67933734}
+  player: {fileID: 729062347}
+  speed: 2
+  secondspeed: 2
+  limitDistance: 500
+  distance: 0
+  move_check: 1
 --- !u!114 &1314251703 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11481894, guid: 2bd642d488e34fe4ea422219898daeeb,
@@ -590,16 +616,28 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 6528448, guid: e0023705c13d59040b5edb7e2b1878b7,
     type: 2}
   m_PrefabInternal: {fileID: 379003836}
---- !u!114 &2090525908 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11433124, guid: 90ab15cefca773249a80cca48c41f01b,
-    type: 2}
-  m_PrefabInternal: {fileID: 67933733}
-  m_Script: {fileID: 11500000, guid: 28442264a001b7847be27a045c5b966b, type: 3}
 --- !u!1 &2131484411 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 168730, guid: 90ab15cefca773249a80cca48c41f01b, type: 2}
   m_PrefabInternal: {fileID: 67933733}
+--- !u!114 &2131484412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131484411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2da000dd5968a54eb3e834258ac7712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playaudioenemy: {fileID: 67933735}
+  player: {fileID: 729062347}
+  speed: 1
+  secondspeed: 2.5
+  limitDistance: 150
+  distance: 0
+  move_check: 1
 --- !u!65 &2131484414 stripped
 BoxCollider:
   m_PrefabParentObject: {fileID: 6570540, guid: 90ab15cefca773249a80cca48c41f01b,

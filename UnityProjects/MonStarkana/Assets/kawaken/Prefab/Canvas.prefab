@@ -27,9 +27,8 @@ GameObject:
   - 224: {fileID: 22495550}
   - 222: {fileID: 22222302}
   - 114: {fileID: 11481184}
-  - 114: {fileID: 11408062}
   m_Layer: 5
-  m_Name: GameOver
+  m_Name: System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +44,6 @@ GameObject:
   - 224: {fileID: 22460476}
   - 222: {fileID: 22225242}
   - 114: {fileID: 11447070}
-  - 114: {fileID: 11475458}
   m_Layer: 5
   m_Name: LIFE
   m_TagString: Untagged
@@ -63,7 +61,6 @@ GameObject:
   - 224: {fileID: 22429766}
   - 222: {fileID: 22234676}
   - 114: {fileID: 11440486}
-  - 114: {fileID: 11474536}
   m_Layer: 5
   m_Name: Selif
   m_TagString: Untagged
@@ -81,7 +78,6 @@ GameObject:
   - 224: {fileID: 22422956}
   - 222: {fileID: 22296942}
   - 114: {fileID: 11494256}
-  - 114: {fileID: 11485468}
   m_Layer: 5
   m_Name: Stamina
   m_TagString: Untagged
@@ -108,18 +104,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &11408062
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08bb3517dc6a9fd47bbee181ab8ce206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: 
 --- !u!114 &11432208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -219,31 +203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIFE
---- !u!114 &11474536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5a7dab023f3dfd4c85b1557bf60cf1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: 
---- !u!114 &11475458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6808de3ea0c447a48bad305fb5d68cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 100
+  m_Text: 
 --- !u!114 &11477512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stamina: 0
-  light_check: 0
   selif: 
   life: 100
   system: 
@@ -264,6 +223,7 @@ MonoBehaviour:
   lifeText: {fileID: 11447070}
   selifText: {fileID: 11440486}
   systemText: {fileID: 11481184}
+  item: {fileID: 0}
 --- !u!114 &11480164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -334,19 +294,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11485468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cca058d73d1834c4687f3c5684c9c70a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  st: 1500
-  light_check: 0
 --- !u!114 &11494256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,7 +326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stamina
+  m_Text: 
 --- !u!222 &22222302
 CanvasRenderer:
   m_ObjectHideFlags: 1

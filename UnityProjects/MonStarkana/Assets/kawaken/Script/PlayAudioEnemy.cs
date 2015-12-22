@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayAudioEnemy : MonoBehaviour
 {
     public AudioClip enemyashi;
-    private AudioSource[] audio;
+    private AudioSource[] audioenemy;
     public int enemy_check = 1;
     public int enemy_check2 = 0;
 
@@ -12,7 +12,7 @@ public class PlayAudioEnemy : MonoBehaviour
 
     void Start()
     {
-        audio = GetComponents<AudioSource>();
+        audioenemy = GetComponents<AudioSource>();
     }
 
     public void Enemyashi()
@@ -32,9 +32,9 @@ public class PlayAudioEnemy : MonoBehaviour
     {
         enemy_check = 0;
         yield return new WaitForSeconds(0);
-        audio[0].PlayOneShot(enemyashi);
+        audioenemy[0].PlayOneShot(enemyashi);
         yield return new WaitForSeconds(0.5f);
-        audio[0].PlayOneShot(enemyashi);
+        audioenemy[0].PlayOneShot(enemyashi);
         yield return new WaitForSeconds(0.5f);
         enemy_check = 1;
     }

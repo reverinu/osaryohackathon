@@ -7,7 +7,7 @@ public class PlayAudio : MonoBehaviour
     public AudioClip ashi02;
     public AudioClip getitem;
     public AudioClip bulldown;
-    private AudioSource[] audio;
+    private AudioSource[] audiobase;
     public int walking_check = 0;
     public int walking_check2 = 0;
 
@@ -15,7 +15,7 @@ public class PlayAudio : MonoBehaviour
 
     void Start()
     {
-        audio = GetComponents<AudioSource>();
+        audiobase = GetComponents<AudioSource>();
     }
 
     public void Walking()
@@ -42,21 +42,21 @@ public class PlayAudio : MonoBehaviour
 
     public void BullDown()
     {
-        audio[1].PlayOneShot(bulldown);
+        audiobase[1].PlayOneShot(bulldown);
     }
 
     public void GetItem()
     {
-        audio[1].PlayOneShot(getitem, 0.5f);
+        audiobase[1].PlayOneShot(getitem, 0.5f);
     }
 
     IEnumerator Walking_()
     {
         walking_check = 0;
         yield return new WaitForSeconds(0);
-        audio[0].PlayOneShot(ashi01, 0.5f);
+        audiobase[0].PlayOneShot(ashi01, 0.5f);
         yield return new WaitForSeconds(0.2f);
-        audio[0].PlayOneShot(ashi02, 0.5f);
+        audiobase[0].PlayOneShot(ashi02, 0.5f);
         yield return new WaitForSeconds(0.4f);
         walking_check = 1;
     }
@@ -65,9 +65,9 @@ public class PlayAudio : MonoBehaviour
     {
         walking_check = 0;
         yield return new WaitForSeconds(0);
-        audio[0].PlayOneShot(ashi01, 0.5f);
+        audiobase[0].PlayOneShot(ashi01, 0.5f);
         yield return new WaitForSeconds(0.6f);
-        audio[0].PlayOneShot(ashi02, 0.5f);
+        audiobase[0].PlayOneShot(ashi02, 0.5f);
         yield return new WaitForSeconds(0.8f);
         walking_check = 2;
     }
