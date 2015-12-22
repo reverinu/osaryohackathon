@@ -472,10 +472,6 @@ MonoBehaviour:
   enemyobj: {fileID: 0}
   enemyobj2: {fileID: 0}
   enemyobj3: {fileID: 0}
-  lifeText: {fileID: 0}
-  staminaText: {fileID: 0}
-  gameoverText: {fileID: 0}
-  selifText: {fileID: 0}
   textmanager: {fileID: 0}
   playercontroller: {fileID: 11479662}
   item: {fileID: 11481894}
@@ -507,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 193362}
-  staminaText: {fileID: 0}
+  textmanager: {fileID: 0}
   MoveSpeed: 3
   move_check: 2
 --- !u!114 &11481894
@@ -523,6 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamemanager: {fileID: 11449124}
   playaudio: {fileID: 11442038}
+  light_check: 0
 --- !u!124 &12400366
 Behaviour:
   m_ObjectHideFlags: 1
