@@ -23,13 +23,14 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.437502 ms
+UnloadTime: 0.416254 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1788 -> priority: 1 
-  Thread -> id: 16f8 -> priority: 1 
+  Thread -> id: 1964 -> priority: 1 
+  Thread -> id: 4c8 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.381694 ms
+UnloadTime: 0.270335 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 453.
-Total: 0.221695 ms (FindLiveObjects: 0.012031 ms CreateObjectMapping: 0.014847 ms MarkObjects: 0.187647 ms  DeleteObjects: 0.006911 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 454.
+Total: 0.200447 ms (FindLiveObjects: 0.008703 ms CreateObjectMapping: 0.015103 ms MarkObjects: 0.172287 ms  DeleteObjects: 0.004095 ms)
 
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:51313}
