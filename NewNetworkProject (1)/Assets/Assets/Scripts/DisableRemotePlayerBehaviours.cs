@@ -15,4 +15,13 @@ public class DisableRemotePlayerBehaviours : NetworkBehaviour {
 			}
 		}
 	}
+
+	void OnApplicationFocus(bool focusStatus) {
+		if(isLocalPlayer)
+		{
+			foreach( var behaviour in behaviours ){
+				behaviour.enabled = focusStatus;
+			}
+		}
+	}
 }
