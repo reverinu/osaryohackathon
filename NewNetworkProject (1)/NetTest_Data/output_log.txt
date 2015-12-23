@@ -16,26 +16,166 @@ Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject 
 Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.096 seconds
+- Completed reload, in  0.093 seconds
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 5.3.1f1 (cc9cbbcc37b4)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.034 seconds
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.428286 ms
+<RI> Initialized touch support.
+UnloadTime: 0.448254 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1780 -> priority: 1 
-  Thread -> id: 65c -> priority: 1 
+  Thread -> id: 19e8 -> priority: 1 
+  Thread -> id: 19f8 -> priority: 1 
+UnloadTime: 0.418814 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 19ec -> priority: 1 
+  Thread -> id: 1f98 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.363262 ms
+UnloadTime: 0.606717 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 455.
-Total: 0.209663 ms (FindLiveObjects: 0.012031 ms CreateObjectMapping: 0.016127 ms MarkObjects: 0.177407 ms  DeleteObjects: 0.003583 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 456.
+Total: 0.196607 ms (FindLiveObjects: 0.011263 ms CreateObjectMapping: 0.014335 ms MarkObjects: 0.166655 ms  DeleteObjects: 0.003839 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.272639 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.303803 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 641.
-Total: 0.271359 ms (FindLiveObjects: 0.012287 ms CreateObjectMapping: 0.030463 ms MarkObjects: 0.222719 ms  DeleteObjects: 0.005631 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 456.
+Total: 0.874748 ms (FindLiveObjects: 0.051967 ms CreateObjectMapping: 0.142847 ms MarkObjects: 0.612861 ms  DeleteObjects: 0.065535 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DisableRemotePlayerBehaviours.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DisableRemotePlayerBehaviours.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DisableRemotePlayerBehaviours.OnApplicationFocus (Boolean focusStatus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DisableRemotePlayerBehaviours.OnApplicationFocus (Boolean focusStatus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferencNExueltion: ObjceEecet refereObjecct re ference noit setc  oofaan onstance 
+of an objeletR
+emotePlayerBehavioulayrs.OnApplicationFocus (BonFoous (eoolaan  foocuusStats)s) [[0x00000] in  <fifilename unknown>:0
+ 
+(
+ 
+(Filene:  LiLne: -1))
+
+NullReferenceExNeullReferenceE xefeerence Ob ecot  reefetorence ntat sece  oof an objence to
+ f t Dan object
+  at DisableRemotePlaAyerBehaviours.s A(pBioolean fcucu (Stooletun foc usSt0at0]s) [0x0<0000] in unkn<wnil:0 
+e
+(Fiame euameknown> 0 
+ 
+( Fil
+e
+name:  Line: -1)
+
+NulllReferenceeExceptinon: jebjt ctrreferrncence not  to aseinstance of instaject
+  at Disable
+R emotesPlayRerBehaviours.OnApoulrs.tOnApocuplicatieanonFocsuts (Bo [0lean 00f in <filensame unknown>:0 
+fil
+ename unk:noLwne: -:0)
+
+ 
+(Filename:  Line: -1)
+
+NullReferenceExceptNullReferenceExcepnce notObset to an innce not se t tob ject
+  atce of an obmjecPt
+ erBe DisabulseRnepmotcaPlionFrBeha vBooules.n nAocpliStatus) ocus 0(0B]oon <filfoncmu snStatus:) [
+ 
+(Filename:  Linename un
+
+known>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceENcullReferenceEx repeifnerebjecce ntt refero aence notc set to an inst
+ance of an object
+ laay DiBehsablueRemotepPlayerBehaviours.Oleanlic focnFocsStatus) [0x000an0] inusStaftus) [0x0000o0] in <
+fi
+(Fename unknown>Lin0 :
+ 1)
+
+
+ilename:  Line: -1)
+
+NullRefNreullEReeptionere: Objecptio n: Obence ct neftersnct nott sent to anne onstance of ean 
+object
+  at RDmoteisableRemotePlay.erBehaviours.OnApplicoaleantfocouFoctus (Bo[olean fo cu <fiatul) [0x00000]k in <file
+na
+mFe unknown>:0 
+ 
+(1)
+F
+ilename:  Line: -1)
+
+NullRellereRcefException: Object reference not set to an instancinsea of an object
+ t 
+at DisiableRemotePPlayerBehavioours.OnAppilitcationFocus (Boolean focustSst atxus) 0[ 0n 00<00ilenamefinknown>:0 know
+n>
+(Fil
+e
+(Finenamee:  Linee -1) 
+
+)
+
+NulNRullReferenceException: Object reference not set toinstnancstance of an obj
+ect
+  at DisableRemotePlayerBehaviours.OlnApplicationFocos (eanoo eanocusSusStat us) 00x000]0 in <<filename unknown>:0 
+  
+( ile
+(me:  Line: -1)
+
+: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  aN DisablfeerotePlaExcyerion:e Objects.Onreferpence innFt seut to an innfstance of an obje0ct
+ in <ft Disanabe eRemotePlaye
+ 
+(aviFilenanAe:p Llinc: -io1Fo
+
+s (Boolean focusStatus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DisableRemotePlayerBehaviours.OnApplicationFocus (Boolean focusStatus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
