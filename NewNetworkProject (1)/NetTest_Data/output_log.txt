@@ -16,21 +16,26 @@ Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject 
 Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.085 seconds
+- Completed reload, in  0.096 seconds
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\A_footballfish\Desktop\gitKawaken\NewNetworkProject (1)\NetTest_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.416254 ms
+UnloadTime: 0.428286 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1964 -> priority: 1 
-  Thread -> id: 4c8 -> priority: 1 
+  Thread -> id: 1780 -> priority: 1 
+  Thread -> id: 65c -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.270335 ms
+UnloadTime: 0.363262 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 454.
-Total: 0.200447 ms (FindLiveObjects: 0.008703 ms CreateObjectMapping: 0.015103 ms MarkObjects: 0.172287 ms  DeleteObjects: 0.004095 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 455.
+Total: 0.209663 ms (FindLiveObjects: 0.012031 ms CreateObjectMapping: 0.016127 ms MarkObjects: 0.177407 ms  DeleteObjects: 0.003583 ms)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:51313}
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.272639 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 641.
+Total: 0.271359 ms (FindLiveObjects: 0.012287 ms CreateObjectMapping: 0.030463 ms MarkObjects: 0.222719 ms  DeleteObjects: 0.005631 ms)
+
