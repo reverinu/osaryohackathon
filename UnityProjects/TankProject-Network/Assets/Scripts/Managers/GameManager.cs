@@ -70,7 +70,6 @@ public class GameManager : NetworkBehaviour
         tmp.m_PlayerName = name;
         tmp.m_LocalPlayerID = localID;
         tmp.Setup();
-
         m_Tanks.Add(tmp);
     }
 
