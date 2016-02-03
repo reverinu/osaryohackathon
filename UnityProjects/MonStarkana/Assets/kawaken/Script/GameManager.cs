@@ -233,6 +233,7 @@ public class GameManager : MonoBehaviour {
         textmanager.GetComponent<TextManager>().selif = "";
         yield return new WaitForSeconds(3);
         textmanager.GetComponent<TextManager>().system = "";
+        textmanager.GetComponent<TextManager>().gManual.SetActive(true);
         playercontroller.GetComponent<Playercontroller>().move_check = 1;
         playaudio.GetComponent<PlayAudio>().walking_check = 1;
         yield return new WaitForSeconds(0);
@@ -241,6 +242,8 @@ public class GameManager : MonoBehaviour {
     IEnumerator Selif2()
     {
         textmanager.GetComponent<TextManager>().stamina = 1000;
+        textmanager.GetComponent<TextManager>().gLifegauge.SetActive(true);
+        textmanager.GetComponent<TextManager>().gStaminagauge.SetActive(true);
         yield return new WaitForSeconds(1);
         textmanager.GetComponent<TextManager>().selif = "「よし、これで明るくなったな……」";
         yield return new WaitForSeconds(2);
@@ -298,6 +301,9 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator SelifO()
     {
+        textmanager.GetComponent<TextManager>().gLifegauge.SetActive(false);
+        textmanager.GetComponent<TextManager>().gStaminagauge.SetActive(false);
+        textmanager.GetComponent<TextManager>().gManual.SetActive(false);
         yield return new WaitForSeconds(0);
         textmanager.GetComponent<TextManager>().selif = "「ここ……までか……」";
         yield return new WaitForSeconds(3);
@@ -314,6 +320,9 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator SelifF()
     {
+        textmanager.GetComponent<TextManager>().gLifegauge.SetActive(false);
+        textmanager.GetComponent<TextManager>().gStaminagauge.SetActive(false);
+        textmanager.GetComponent<TextManager>().gManual.SetActive(false);
         yield return new WaitForSeconds(0);
         textmanager.GetComponent<TextManager>().selif = "「ここまで来たが、何がどうなってるのかいまだにわからない」";
         yield return new WaitForSeconds(2);

@@ -6,18 +6,22 @@ Direct3D:
     Vendor:   Intel
     VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\unity\MonStarkana\v041\SmallStory_ver041_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.061 seconds
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.240 seconds
 desktop: 1366x768 59Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\MonStarkana\v041\SmallStory_ver041_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2a14 -> priority: 1 

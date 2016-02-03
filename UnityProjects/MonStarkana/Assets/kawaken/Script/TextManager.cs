@@ -9,19 +9,21 @@ public class TextManager : MonoBehaviour {
     public string selif = "";
     public int life = 100;
     public string system = "";
-    public Text staminaText;
-    public Text lifeText;
     public Text selifText;
     public Text systemText;
     public Item item;
-
+    public RectTransform LIFEGauge;
+    public RectTransform StaminaGauge;
+    public GameObject gLifegauge;
+    public GameObject gStaminagauge;
+    public GameObject gManual;
 
     // Update is called once per frame
     void Update () {
         if (item.GetComponent<Item>().light_check == 1)
         {
-            staminaText.GetComponent<Text>().text = "Stamina " + stamina;
-            lifeText.GetComponent<Text>().text = "LIFE " + life;
+            StaminaGauge.GetComponent<RectTransform>().sizeDelta = new Vector2(stamina / 5, 20);
+            LIFEGauge.GetComponent<RectTransform>().sizeDelta = new Vector2(life*3, 20);
         }
         selifText.GetComponent<Text>().text = selif;
         systemText.GetComponent<Text>().text = system;

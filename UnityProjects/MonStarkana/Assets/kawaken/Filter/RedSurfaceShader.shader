@@ -18,7 +18,7 @@
 		float4 c = tex2D(_MainTex, i.uv);
 		float f = (c.r + c.g + c.b) / 3;
 
-		return float4(1,c.g,c.b,1);
+		return float4(0.5,c.g,c.b,1);
 	}
 		ENDCG
 	}
