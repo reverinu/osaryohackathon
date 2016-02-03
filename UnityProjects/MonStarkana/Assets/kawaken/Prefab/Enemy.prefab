@@ -1793,6 +1793,7 @@ GameObject:
   - 82: {fileID: 8241312}
   - 114: {fileID: 11459596}
   - 114: {fileID: 11499624}
+  - 114: {fileID: 11451370}
   m_Layer: 0
   m_Name: SPIDER2
   m_TagString: Enemy
@@ -2339,6 +2340,7 @@ GameObject:
   - 82: {fileID: 8201340}
   - 114: {fileID: 11447204}
   - 114: {fileID: 11480196}
+  - 114: {fileID: 11449394}
   m_Layer: 0
   m_Name: SPIDER3
   m_TagString: Enemy
@@ -5065,6 +5067,42 @@ MonoBehaviour:
   enemyashi: {fileID: 8300000, guid: 226c0015f19d0dc418c8f134e3c94363, type: 3}
   enemy_check: 1
   enemy_check2: 0
+--- !u!114 &11449394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2da000dd5968a54eb3e834258ac7712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playaudioenemy: {fileID: 11447204}
+  player: {fileID: 0}
+  speed: 2
+  secondspeed: 2
+  limitDistance: 500
+  distance: 0
+  move_check: 1
+--- !u!114 &11451370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2da000dd5968a54eb3e834258ac7712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playaudioenemy: {fileID: 11459596}
+  player: {fileID: 0}
+  speed: 1
+  secondspeed: 2.5
+  limitDistance: 150
+  distance: 0
+  move_check: 1
 --- !u!114 &11459596
 MonoBehaviour:
   m_ObjectHideFlags: 1

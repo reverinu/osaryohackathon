@@ -17,21 +17,21 @@ public class Item : MonoBehaviour {
         gamemanager.GetComponent<GameManager>().spotlight.intensity = 4.7f;
         Destroy(gamemanager.GetComponent<GameManager>().deslight);
         light_check = 1;
-        gamemanager.GetComponent<GameManager>().StartCoroutine("Selif2");
+        gamemanager.GetComponent<GameManager>().selif.StartCoroutine("Selif2");
     }
 
     public void bullskull()
     {
-        gamemanager.GetComponent<GameManager>().StartCoroutine("SelifBull");
+        gamemanager.GetComponent<GameManager>().selif.StartCoroutine("SelifBull");
     }
 
     public void meats()
     {
-        gamemanager.GetComponent<GameManager>().StartCoroutine("SelifMeat");
+        gamemanager.GetComponent<GameManager>().selif.StartCoroutine("SelifMeat");
     }
 
     public void gomibako()
     {
-        gamemanager.GetComponent<GameManager>().StartCoroutine("SelifGomibako");
+        gamemanager.GetComponent<GameManager>().selif.StartCoroutine("SelifGomibako");
     }
 }

@@ -70,6 +70,7 @@ GameObject:
   - 54: {fileID: 5481788}
   - 114: {fileID: 11481894}
   - 135: {fileID: 13555076}
+  - 114: {fileID: 11452674}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -472,7 +473,8 @@ MonoBehaviour:
   enemyobj: {fileID: 0}
   enemyobj2: {fileID: 0}
   enemyobj3: {fileID: 0}
-  textmanager: {fileID: 0}
+  uimanager: {fileID: 0}
+  selif: {fileID: 11452674}
   playercontroller: {fileID: 11479662}
   item: {fileID: 11481894}
   ushi: {fileID: 0}
@@ -491,6 +493,20 @@ MonoBehaviour:
   evn3: 1
   evn4: 1
   evtutorial: 1
+--- !u!114 &11452674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e15a9ca33866ee4babb1458d513f986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uimanager: {fileID: 0}
+  playercontroller: {fileID: 11479662}
+  playaudio: {fileID: 11442038}
 --- !u!114 &11479662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -503,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 193362}
-  textmanager: {fileID: 0}
+  uimanager: {fileID: 0}
   MoveSpeed: 3
   move_check: 2
 --- !u!114 &11481894
