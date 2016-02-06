@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Selif : MonoBehaviour {
+public class Events : MonoBehaviour {
 
     public UIManager uimanager;
     public Playercontroller playercontroller;

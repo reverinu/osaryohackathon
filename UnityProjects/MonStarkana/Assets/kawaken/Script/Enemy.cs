@@ -53,6 +53,8 @@ public class Enemy : MonoBehaviour
             }
             else if (distance <= 15)
             {
+                playaudioenemy.GetComponent<PlayAudioEnemy>().enemy_check2 = 2;
+                playaudioenemy.GetComponent<PlayAudioEnemy>().Enemyata();
                 this.GetComponent<Animation>().Play("Attack");
                 transform.position = transform.position + (direction * secondspeed * Time.deltaTime);
             }
