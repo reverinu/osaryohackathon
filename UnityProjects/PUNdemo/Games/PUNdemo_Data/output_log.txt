@@ -16,24 +16,16 @@ Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo
 Loading C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.046 seconds
+- Completed reload, in  0.121 seconds
 Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\osaryohackathon\UnityProjects\PUNdemo\Games\PUNdemo_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.399101 ms
+UnloadTime: 1.165305 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3970 -> priority: 1 
-  Thread -> id: 738 -> priority: 1 
-Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
+  Thread -> id: 2d50 -> priority: 1 
+  Thread -> id: 2290 -> priority: 1 

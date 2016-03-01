@@ -28,8 +28,15 @@ public class PhotonManager : Photon.MonoBehaviour
     /// </summary>
     void OnPhotonRandomJoinFailed()
     {
+        RoomOptions roomOptions = new RoomOptions();// ルームオプション作成
+        roomOptions.isVisible = true;
+        roomOptions.isOpen = true;
+        roomOptions.maxPlayers = 4;
         // ルームを作成、部屋名は今回はnullに設定
-        PhotonNetwork.CreateRoom(null);
+        PhotonNetwork.CreateRoom(
+                        null,           // 部屋名 
+                        roomOptions,    // ルームオプション
+                        null);          // ロビータイプ
     }
 
     /// <summary>
